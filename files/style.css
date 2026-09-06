@@ -1,0 +1,75 @@
+
+body {
+    background-color: #bfc7ee;
+    background-size: cover;
+    background-image: url(images/wave.gif);
+}
+h1{font-family: "Didot", serif; 
+    font-size: 50px;
+     color: #291a00; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+h2{font-family: "Bradley Hand", cursive; 
+    font-size: 40px;
+     color: #32066e; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+main{font-family: "American Typewriter", monospace; 
+    font-size: 25px;
+     color: #291a00; 
+    text-align: center; 
+    margin-top: 20px;
+
+}
+p { margin-right: 10px; 
+    margin-left: 10px;
+    padding: 10px;
+    color: #291a00;
+    font-weight:300;
+}
+img{ 
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+}
+
+div{
+    border: solid;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;  
+    display: flex; 
+    backdrop-filter: blur(10px); 
+    background-color: rgba(104, 141, 166, 0.5); 
+    color: #fff;
+
+}
+#welcome {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    color:#291a00
+}
+
+.button {
+    background-color:#bfc7ee;
+    color: #291a00;
+    padding: 10px 20px;
+    border: solid #320c6e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+}
