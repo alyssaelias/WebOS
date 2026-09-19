@@ -1,4 +1,4 @@
-// Make the DIV element draggable:
+
 dragElement(document.getElementById("window")).element.onmousedown = startDragging;
 
 
@@ -85,3 +85,77 @@ notesScreenClose.addEventListener("click", () => closeWindow(welcomeScreen));
 var notesScreen = document.querySelector("#notes")
 var notesScreenClose = document.querySelector("#notesclose")
 notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
+
+var biggestIndex = 2;
+
+function addWindowTapHandling(element) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(element)
+  )
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+}
+
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+}
+
+var topBar = document.querySelector("#top")
+
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
+}
+
+var content = [
+  {
+    title: "Welcome",
+    date: "06/28/2023",
+    content: `
+      <h1> Welcome to my OS</h1>
+      <h2>My name is Alyssa and I'm 17 years old.</h2>
+      <main>
+        <img src="images/imageofme.png"/>
+         <p> I love coding in my free time and this is my space to show you some of my projects. <br> For examply I coded <a href="https://alyssaelias.github.io/ChemE-curiosity-project/"> my own educational website. </a> <br> Give it a visit! I would greatly appreciate it! </p>
+      </main>
+      
+    `
+  }
+]
+
+
+
+function initializeIcon(name) {
+var icon = document.querySelector("#" + name + "Icon")
+var screen = document.querySelector("#" + name)
+icon.addEventListener("click", () => handleIconTap(icon, screen));
+}
+initializeIcon("notes")
+
+function initializeWindow(elementName) {
+var screen = document.querySelector("#" + elementName)
+addWindowTapHandling(screen)
+makeClosable(elementName)
+dragElement(screen)
+if(elementName != "welcome") {
+initializeIcon(elementName)  
+}
+}
+initializeWindow("welcome")
+initializeWindow("notes")
+
+initializeWindow("photo")

@@ -77,10 +77,39 @@ div{
 text-align: center;
 padding: 10px; 
 border-radius: 10px;
-height: 80px
+height: 80px;
+height: 80px;
 width: 80px;
 
 }
 .selected {
 background-color: #001f61cb; 
+}
+
+.photoicon {
+    text-align: center;
+
+}
+
+.photo {
+    margin: 16px;
+    border-radius: 16px;
+    background-color: #0008ff9c; 
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    top: calc(50% - 90px); 
+    left: calc(50% - 180px);
+
+}
+
+.photo2 {
+    padding: 15px;
+    border-radius: 20px;
+    display: none;
+    backdrop-filter: blur(15px);
+    width: auto;
+    height: 80px;
+    text-align: center;
 }
