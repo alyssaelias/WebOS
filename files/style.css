@@ -3,22 +3,26 @@ body {
     background-color: #bfc7ee;
     background-size: cover;
     background-image: url(images/wave.gif);
+    backdrop-filter: blur(30px);
 }
-h1{font-family: "Didot", serif; 
+h1{
+    font-family: "Didot", serif; 
     font-size: 50px;
      color: #291a00; 
     text-align: center; 
     margin-top: 20px;
 }
 
-h2{font-family: "Bradley Hand", cursive; 
+h2{
+    font-family: "Bradley Hand", cursive; 
     font-size: 40px;
      color: #32066e; 
     text-align: center; 
     margin-top: 20px;
 }
 
-main{font-family: "American Typewriter", monospace; 
+main{
+    font-family: "American Typewriter", monospace; 
     font-size: 25px;
      color: #291a00; 
     text-align: center; 
@@ -103,6 +107,7 @@ background-color: #001f61cb;
 }
 
 .photo {
+    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     margin: 16px;
     border-radius: 16px;
     background-color: #0008ff9c; 
@@ -116,6 +121,7 @@ background-color: #001f61cb;
 }
 
 .photo2 {
+    font-family: "Bookman Old Style", serif;
     padding: 15px;
     border-radius: 20px;
     display: none;
@@ -126,6 +132,7 @@ background-color: #001f61cb;
 }
 
 .bottom {
+    font-family: "Courier New", monospace;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -137,6 +144,7 @@ background-color: #001f61cb;
     align-items: center;
 }
 .end {
+    font-family: "Courier New", monospace;
     position: fixed;
     display: flex;
     justify-content: center;
