@@ -25,7 +25,9 @@ main{font-family: "American Typewriter", monospace;
     margin-top: 20px;
 
 }
-p { margin-right: 10px; 
+p { 
+    font-family: "American Typewriter", monospace;
+    margin-right: 10px; 
     margin-left: 10px;
     padding: 10px;
     color: #291a00;
