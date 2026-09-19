@@ -2,12 +2,12 @@
 dragElement(document.getElementById("window")).element.onmousedown = startDragging;
 
 
-function dragElement(element) {
+function dragElement(element, e) {
   var initialX = 0;
   var initialY = 0;
   var currentX = 0;
   var currentY = 0;
-  e = e || window.event;
+  if (!e) return;
   e.preventDefault();
   currentX = initialX - e.clientX;
   currentY = initialY - e.clientY;
@@ -27,7 +27,7 @@ function startDragging(e) {
     initialX = e.clientX;
     initialY = e.clientY;
     document.onmouseup = stopDragging;
-    document.onmousemove = dragElement;
+    document.onmousemove = (event) => dragElement(e.currentTarget, event);
 }
 
 function stopDragging() {
@@ -126,11 +126,16 @@ var content = [
     title: "Welcome",
     date: "06/28/2023",
     content: `
-      <h1> Welcome to my OS</h1>
-      <h2>My name is Alyssa and I'm 17 years old.</h2>
+      <h1>Welcome to AlyssaOS!</h1>
+      <p>Welcome to my personal WebOS! Use my personal assistant to get help with anything you need!</p>
+      <h2> My name is Alyssa and I'm 17 years old. </h2>
       <main>
-        <img src="images/imageofme.png"/>
-         <p> I love coding in my free time and this is my space to show you some of my projects. <br> For examply I coded <a href="https://alyssaelias.github.io/ChemE-curiosity-project/"> my own educational website. </a> <br> Give it a visit! I would greatly appreciate it! </p>
+        <img src="images/imageofme.png" alt="Alyssa smiling warmly in a personal profile portrait, presented within the AlyssaOS welcome window; her expression creates a friendly and approachable tone.">
+        <p> I am a high school student who is passionate about coding and technology. 
+          I enjoy creating projects that are both fun and educational, and I hope to inspire others to learn about coding as well. 
+          For example, I coded <a href="https://alyssaelias.github.io/ChemE-curiosity-project/">my own educational website. </a> 
+           Give it a try and learn about chemical engineering!
+        </p>
       </main>
       
     `
