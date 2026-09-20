@@ -3,18 +3,18 @@ dragElement(document.getElementById("window")).element.onmousedown=startDragging
 
 
 function drageElement(element, e) {
-var initailX = 0;
-var initialY = 0;
-var currentX = 0;
-var currentY = 0;
-if (!e) return;
-e.preventDefault();
-currentX = initialX - e.clientX;
-currentY = initialY - e.clientY;
-initialX = e.clientX;
-initialY = e.clientY;
-element.style.top = (element.offsetTop - currentY) + "px";
-element.style.left = (element.offsetLeft - currentX) + "px";
+ var initailX = 0;
+ var initialY = 0;
+ var currentX = 0;
+ var currentY = 0;
+ if (!e) return;
+ e.preventDefault();
+ currentX = initialX - e.clientX;
+ currentY = initialY - e.clientY;
+ initialX = e.clientX;
+ initialY = e.clientY;
+ element.style.top = (element.offsetTop - currentY) + "px";
+ element.style.left = (element.offsetLeft - currentX) + "px";
 }
 
 element.onmousedown = startDragging;
@@ -33,8 +33,8 @@ function startDragging(e) {
 }
    
 function stopDragging() {
-    document.onmouseup = null;
-    document.onmousemove = null;
+  document.onmouseup = null;
+  document.onmousemove = null;
 }
   
 var welcomeScreen = document.querySelector("#welcome")
@@ -92,7 +92,7 @@ var biggestIndex = 2;
 
 function addWindowTapHandling(element) {
   element.addEventListener("mousedown", () =>
-    handleWindowTap(element)
+  handleWindowTap(element)
   )
 }
 
