@@ -32,10 +32,6 @@ function startDragging(e) {
  element.style.left = (element.offsetLeft - currentX) + "px";
 }
    
-  
-
-  
-
 function stopDragging() {
     document.onmouseup = null;
     document.onmousemove = null;
