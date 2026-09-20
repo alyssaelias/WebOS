@@ -9,36 +9,39 @@ body{
 
 h1{
     font-family: "Didot", serif;
-    font-size: 40px;
+    font-size: 45px;
     color: #291a00;
     text-align: center;
     margin-top:20px;
 }
 
 h2{
-    font-family: "Bradley Hand", cursive; 
+    font-family: "Bradley Hand", cursive;
     font-size: 40px;
-    color: #32066e; 
-    text-align: center; 
+    color: #32066e;
+    text-align: center;
     margin-top: 20px;
+    padding: 10px;
+    
 }
 
 main{
-    font-family: "American Typewriter", monospace; 
-    font-size: 25px;
-     color: #291a00; 
-    text-align: center; 
-    margin-top: 20px;
-
-}
-p { 
     font-family: "American Typewriter", monospace;
-    margin-right: 10px; 
+    font-size: 30px;
+    color: #291a00;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-family: "American Typewriter", monospace;
+    margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
-    color: #291a00;
-    font-weight:300;
+    color:#291a00;
+    font-weight: 300;
 }
+
 img{ 
     display: block;
     margin-left: 20px;
