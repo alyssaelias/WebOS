@@ -1,34 +1,40 @@
 
-dragElement(document.getElementById("window")).element.onmousedown = startDragging;
+dragElement(document.getElementById("window")).element.onmousedown=startDragging;
 
 
-function dragElement(element, e) {
-  var initialX = 0;
-  var initialY = 0;
-  var currentX = 0;
-  var currentY = 0;
-  if (!e) return;
-  e.preventDefault();
-  currentX = initialX - e.clientX;
-  currentY = initialY - e.clientY;
-  initialX = e.clientX;
-  initialY = e.clientY;
-  element.style.top = (element.offsetTop - currentY) + "px";
-  element.style.left = (element.offsetLeft - currentX) + "px";
+function drageElement(element, e) {
+var initailX = 0;
+var initialY = 0;
+var currentX = 0;
+var currentY = 0;
+if (!e) return;
+e.preventDefault();
+currentX = initialX - e.clientX;
+currentY = initialY - e.clientY;
+initialX = e.clientX;
+initialY = e.clientY;
+element.style.top = (element.offsetTop - currentY) + "px";
+element.style.left = (element.offsetLeft - currentX) + "px";
 }
 
+element.onmousedown = startDragging;
 
-  
-
-  
 function startDragging(e) {
-    e = e || window.event;
-    e.preventDefault();
-    initialX = e.clientX;
-    initialY = e.clientY;
-    document.onmouseup = stopDragging;
-    document.onmousemove = (event) => dragElement(e.currentTarget, event);
+  document.onmouseup = stopDragging;
+ document.onmousemove = dragElement;
+  e = e || window.event;
+  e.preventDefault();
+  initalX = e.clientX;
+  initialY = e.clientY;
+  document.onmouseup = stopDragging;
+  document.onmousemove = (event) => drageElement(e.currentTarget,event);
+  element.style.top = (element.offsetTop - currentY) + "px";
+ element.style.left = (element.offsetLeft - currentX) + "px";
 }
+   
+  
+
+  
 
 function stopDragging() {
     document.onmouseup = null;
