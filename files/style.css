@@ -51,9 +51,6 @@ img{
 }
 
 div{
-    border: solid;
-    width: 200px;
-    height: 300px;
     border-radius: 10px;
     padding: 10px;
     position: absolute;
