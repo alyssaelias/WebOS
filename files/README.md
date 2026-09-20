@@ -1,2 +1,0 @@
-# WebOS
-WebOs Hackathon project
