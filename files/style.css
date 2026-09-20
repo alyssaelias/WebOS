@@ -2,7 +2,7 @@
 body{
    background-color: #bfc7ee;     
    background-size: cover;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(50px);
    background-image: url("files/aurora.jpg");
 
 }
@@ -10,7 +10,7 @@ body{
 h1{
     font-family: "Didot", serif;
     font-size: 45px;
-    color: #291a00;
+    color: #073a06;
     text-align: center;
     margin-top:20px;
 }
@@ -18,7 +18,7 @@ h1{
 h2{
     font-family: "Bradley Hand", cursive;
     font-size: 40px;
-    color: #32066e;
+    color: #3a043a;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
@@ -28,7 +28,7 @@ h2{
 main{
     font-family: "American Typewriter", monospace;
     font-size: 30px;
-    color: #291a00;
+    color: #043a22;
     text-align: center;
     padding: 20px;
 }
@@ -38,11 +38,11 @@ p {
     margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
-    color:#291a00;
+    color:#043a22;
     font-weight: 300;
 }
 
-img{ 
+img {
     display: block;
     margin-left: 20px;
     margin-right: 20px;
@@ -51,31 +51,32 @@ img{
 }
 
 div{
+    border: solid #18446e;
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
     padding: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;  
-    display: flex; 
-    backdrop-filter: blur(10px); 
-    background-color: rgba(104, 141, 166, 0.5); 
-    color: #fff;
-
+    display: flex;
+    backdrop-filter: blur(20px);
+    background-color: rgba(45, 136, 159, 0.69);
 }
+
 #welcome {
     width: 400px;
     height: 200px;
     display: flex;
-    color:#291a00
+    color:#094229;
 }
 
 .button {
     background-color:#bfc7ee;
-    color: #291a00;
+    color: #073a06;
     padding: 10px 20px;
-    border: solid #320c6e;
+    border: solid #0e0218;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -95,7 +96,7 @@ width: 80px;
     width: 400px;
     height: 200px;
     display: flex;
-    color:#2d7349a3
+    color:#39041c;
 }
 
 .top {
@@ -103,8 +104,9 @@ width: 80px;
     top: 0;
     left: 0;
     width: 100%;
+
     height: 50px;
-    background-color: #379185c1;
+    background-color: #4a769f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +114,7 @@ width: 80px;
 
 
 .selected {
-background-color: #001f61cb; 
+background-color: #126e78a5; 
 }
 
 .photoicon {
@@ -124,7 +126,7 @@ background-color: #001f61cb;
     font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     margin: 16px;
     border-radius: 16px;
-    background-color: #0008ff9c; 
+    background-color: #094229; 
     text-align: center;
     padding: 20px;
     display: flex;
@@ -152,7 +154,7 @@ background-color: #001f61cb;
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: #917037;
+    background-color: #18446e;
     display: flex;
     justify-content: center;
     align-items: center;
