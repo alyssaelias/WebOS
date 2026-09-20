@@ -1,22 +1,24 @@
 
-body {
-    background-color: #bfc7ee;
-    background-size: cover;
-    background-image: url(images/wave.gif);
-    backdrop-filter: blur(30px);
+body{
+   background-color: #bfc7ee;     
+   background-size: cover;
+   backdrop-filter: blur(10px);
+   background-image: url("files/aurora.jpg");
+
 }
+
 h1{
-    font-family: "Didot", serif; 
-    font-size: 50px;
-     color: #291a00; 
-    text-align: center; 
-    margin-top: 20px;
+    font-family: "Didot", serif;
+    font-size: 40px;
+    color: #291a00;
+    text-align: center;
+    margin-top:20px;
 }
 
 h2{
     font-family: "Bradley Hand", cursive; 
     font-size: 40px;
-     color: #32066e; 
+    color: #32066e; 
     text-align: center; 
     margin-top: 20px;
 }
