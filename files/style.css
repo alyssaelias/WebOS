@@ -1,0 +1,168 @@
+
+body{
+   background-color: #bfc7ee;     
+   background-size: cover;
+   backdrop-filter: blur(50px);
+   background-image: url("files/aurora.jpg");
+
+}
+
+h1{
+    font-family: "Didot", serif;
+    font-size: 45px;
+    color: #073a06;
+    text-align: center;
+    margin-top:20px;
+}
+
+h2{
+    font-family: "Bradley Hand", cursive;
+    font-size: 40px;
+    color: #3a043a;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+main{
+    font-family: "American Typewriter", monospace;
+    font-size: 30px;
+    color: #043a22;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-family: "American Typewriter", monospace;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    color:#043a22;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+}
+
+div{
+    border: solid #18446e;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    backdrop-filter: blur(20px);
+    background-color: rgba(45, 136, 159, 0.69);
+}
+
+#welcome {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    color:#094229;
+}
+
+.button {
+    background-color:#bfc7ee;
+    color: #073a06;
+    padding: 10px 20px;
+    border: solid #0e0218;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+}
+#desktopApps {
+text-align: center;
+padding: 10px; 
+border-radius: 10px;
+height: 80px;
+height: 80px;
+width: 80px;
+
+}
+
+#window {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    color:#39041c;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 50px;
+    background-color: #4a769f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.selected {
+background-color: #126e78a5; 
+}
+
+.photoicon {
+    text-align: center;
+
+}
+
+.photo {
+    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    margin: 16px;
+    border-radius: 16px;
+    background-color: #094229; 
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    top: calc(50% - 90px); 
+    left: calc(50% - 180px);
+
+}
+
+.photo2 {
+    font-family: "Bookman Old Style", serif;
+    padding: 15px;
+    border-radius: 20px;
+    display: none;
+    backdrop-filter: blur(15px);
+    width: auto;
+    height: 80px;
+    text-align: center;
+}
+
+.bottom {
+    font-family: "Courier New", monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #18446e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end {
+    font-family: "Courier New", monospace;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head> 
+  <link rel="stylesheet" href="files/style.css" />
+  <script src="files/script.js" defer></script>
+</head>
+<html>
+  <body>
+    <body>
+      <script src="files/script.js"></script>
+      <script>
+        function updateTime (){
+          var currentTime = new Date().toLocaleDateString();
+          var timeText = document.querySelector("#time");
+          timeText.innerHTML = currentTime
+        }
+        setInterval(updateTime, 1000)
+      </script>
+    </body>
+
+    <div id="photoIcon">  
+      <img src="images/appicon.png" alt="A friendly AlyssaOS app icon displayed on the WebOS desktop, introducing the operating system interface with a welcoming tone.">
+      <p> Hello World! Nice to meet you! </p>
+      <img src="images/wave.gif" alt="A hand waving in a friendly greeting within the AlyssaOS desktop interface, creating a welcoming tone.">
+      <div id="photo2"> 
+        <img src="images/laptop.png" alt="A laptop displayed in the AlyssaOS desktop interface, representing coding and technology in the educational welcome screen.">
+        <p> This is a fun way for you to learn about me and my projects! Have fun and hope you enjoy! </p>
+      </div>
+
+    </div>
+    
+   <div class="button" id="welcome" style="display:flex; justify-content:space-evenly;">
+      <p style="cursor:poniter;" id="welcomeclose"> Close </p>
+      <p style="cursor:pointer;" id="welcomeopen"> 
+       Welcome to AlyssaOS!!
+      </p>
+      <p id="time">
+        9/19/26 8:32 AM EST
+      </p>
+   </div>
+
+    <div id="top">
+
+      <div class="window" id="Lyssistant">
+        <body>
+          <h1>Welcome to AlyssaOS!</h1>
+          <p>Welcome to my personal WebOS! Use my personal assistant to get help with anything you need!</p>
+          <h2> My name is Alyssa and I'm 17 years old. </h2>
+          <main>
+            <img src="images/imageofme.png" alt="Alyssa smiling warmly in a personal profile portrait, presented within the AlyssaOS welcome window; her expression creates a friendly and approachable tone.">
+            <p> I am a high school student who is passionate about coding and technology. 
+              I enjoy creating projects that are both fun and educational, and I hope to inspire others to learn about coding as well. 
+              For example, I coded <a href="https://alyssaelias.github.io/ChemE-curiosity-project/">my own educational website. </a> 
+              Give it a try and learn about chemical engineering!
+            </p>
+          </main>
+          
+        </body>
+      </div>
+
+      <div class="selected" id="desktopApps" style="padding-top: 64px; padding-left: 16px; display: none;">  
+        <p> Lyssistant </p>
+        <img src="images/assistant.png" alt="A friendly personal assistant character representing Lyssistant, displayed as an app icon on the AlyssaOS desktop. The welcoming design creates a helpful and approachable tone, and no text is visible in the icon.">
+      </div>
+
+    </div>
+
+    <div id="bottom">
+      <div class="button" id="desktop" style="display:flex; justify-content:space-evenly;">
+        <p style="cursor:pointer;" id="desktopopen"> Desktop </p>
+        <p style="cursor:pointer;" id="desktopclose"> Close </p>
+      </div>
+      <div id="end">
+        <p> This is the end of my WebOS! Hope you enjoyed it! 
+          Bye!
+          ~Alyssa
+        </p>
+      </div>
+
+    </div>
+
+    
+
+
+  </body>
+  
+  
+</html>
